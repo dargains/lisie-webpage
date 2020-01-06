@@ -1,0 +1,21 @@
+:root {
+  --m-01: #f45d5d;
+  --m-02: #567adc;
+  --m-03: #fcdf90;
+  --m-04: #41e7c6;
+  --neu-01: #ffffff;
+  --neu-02: #f4f4f4;
+  --neu-03: #eaeaea;
+  --neu-04: #9296a3;
+  --neu-05: #444a56;
+  --neu-06: #1f2127;
+
+  --add-01: #f45d5d;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
