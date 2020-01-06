@@ -9,11 +9,22 @@ export const H1 = styled.h1`
 `;
 
 export const H2 = styled.h2`
-	color: var(--neu-06);
+	color: ${props => props.white ? 'var(--neu-01)' : 'var(--neu-06)'};
 	font-family: Montserrat;
 	font-size: 40px;
 	font-weight: bold;
-	line-height: 64px;
+  line-height: 64px;
+  padding-bottom: 32px;
+  &:after {
+    content: '';
+    height: 6px;
+    width: 72px;
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: ${props => props.white ? 'var(--neu-01)' : 'var(--m-01)'}
+  }
 `;
 export const H3 = styled.h3`
 	color: var(--m-01);
@@ -23,7 +34,7 @@ export const H3 = styled.h3`
 	line-height: 30px;
 `;
 export const Body = styled.p`
-	color: var(--neu-06);
+	color: ${props => props.white ? 'var(--neu-01)' : 'var(--neu-06)'};
 	font-family: Montserrat;
 	font-size: 21px;
 	line-height: 30px;

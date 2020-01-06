@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const Figure = ({ style, width, src, alt }) => {
   return (
-    <figure style={{ width: width + 'px', ...style }}>
+    <figure style={{ maxWidth: width + 'px', ...style }}>
       <img src={src} alt={alt} />
     </figure>
   )
