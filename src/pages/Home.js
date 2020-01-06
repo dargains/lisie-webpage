@@ -1,10 +1,14 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
+
+import Heading from '../components/Heading'
+import WOT from '../components/WOT'
 
 export default function Home() {
 
   return (
     <>
-      <h1>Lisie</h1>
+      <Heading />
+      <WOT />
     </>
   )
 }

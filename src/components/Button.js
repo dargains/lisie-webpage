@@ -2,46 +2,40 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const Button = ({ children, handleClick, primary, white, color }) => {
+import PlayNormal from '../images/play normal.svg'
+import AppNormal from '../images/app normal.svg'
+import PlayDisabled from '../images/play disabled.svg'
+import AppDisabled from '../images/app disabled.svg'
+
+const Button = ({ handleClick, type, disabled }) => {
+  const source = (type => {
+    if (type === 'play') {
+      if (disabled) return PlayDisabled
+      else return PlayNormal
+    }
+    if (type === 'app') {
+      if (disabled) return AppDisabled
+      else return AppNormal
+    }
+  })(type)
+
   return (
-    <BTN onClick={handleClick} primary={primary} white={white} color={color}>
-      {children}
+    <BTN onClick={handleClick}>
+      <img src={source} alt={type === "app" ? "App Store" : "Play Store"} />
     </BTN>
   )
 }
 
-const BTN = styled.button`
-  width: 100%;
-  max-width: 250px;
+const BTN = styled.figure`
+  width: 184px;
+	height: 56px;
   display: block;
-  padding: 16px 24px;
-  margin: 16px auto;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  color: ${props => props.white ? props.color : 'var(--neu-01)'};
-  cursor: pointer;
-	height: 72px;
-	border-radius: 36px;
-  font-size: 16px;
-  letter-spacing: 0.6px;
-  line-height: 22px;
-  text-transform: uppercase;
-  background-color: ${props => props.white ? 'var(--neu-01)' : props.primary ? 'var(--m-01)' : 'var(--m-02)'};
-  @media (min-width: 0) and (max-width: 340px) {
-		height: auto;
-	}
 `;
 
 Button.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node
-  ]).isRequired,
-  handleClick: PropTypes.func.isRequired,
-  primary: PropTypes.bool,
-  white: PropTypes.bool,
-  color: PropTypes.string
+  handleClick: PropTypes.func,
+  type: PropTypes.string.isRequired,
+  disabled: PropTypes.bool
 }
 
 export default Button;
