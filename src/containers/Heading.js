@@ -22,7 +22,7 @@ const Heading = () => {
             </H1>
             <ButtonContainer style={buttonContainerStyle}>
               <Button type="play" />
-              <Button type="app" />
+              <Button type="app" disabled />
               {/* <Button type="play" disabled />
             <Button type="app" disabled /> */}
             </ButtonContainer>

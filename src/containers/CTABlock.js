@@ -13,7 +13,7 @@ const CTABlock = () => {
         <Body white>Agora a família está completa</Body>
         <ButtonContainer center style={{ marginTop: "64px" }}>
           <Button type="play" />
-          <Button type="app" />
+          <Button type="app" disabled />
         </ButtonContainer>
       </div>
     </Section >

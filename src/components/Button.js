@@ -20,7 +20,7 @@ const Button = ({ handleClick, type, disabled }) => {
   })(type)
 
   return (
-    <BTN onClick={handleClick}>
+    <BTN onClick={handleClick} disabled={disabled}>
       <img src={source} alt={type === "app" ? "App Store" : "Play Store"} />
     </BTN>
   )
@@ -33,6 +33,7 @@ const BTN = styled.figure`
   cursor: pointer;
   opacity: 1;
   transition: opacity .2s ease-in-out;
+  pointer-events: ${props => props.disabled ? 'none' : 'auto'};
   &:hover {
     opacity: .5;
   }
