@@ -30,6 +30,12 @@ const BTN = styled.figure`
   width: 184px;
 	height: 56px;
   display: block;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity .2s ease-in-out;
+  &:hover {
+    opacity: .5;
+  }
 `;
 
 Button.propTypes = {
