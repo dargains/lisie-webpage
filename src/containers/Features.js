@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { H3, Body } from './Fonts'
-import Figure from './Figure'
+import { H3, Body } from '../components/Fonts'
+import Figure from '../components/Figure'
 
 import Feature1 from '../images/feature1.svg'
 import Feature2 from '../images/feature2.svg'

@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { H1 } from './Fonts'
-import Button from './Button'
-import Figure from './Figure'
-import ButtonContainer from './ButtonContainer'
+import { H1 } from '../components/Fonts'
+import Button from '../components/Button'
+import Figure from '../components/Figure'
+import ButtonContainer from '../components/ButtonContainer'
 
 import logo from '../images/Logo.png'
 import Phone from '../images/iPhone 8.png'

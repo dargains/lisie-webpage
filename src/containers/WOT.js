@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { H2, Body } from './Fonts'
+import { H2, Body } from '../components/Fonts'
 
 const WOT = props => {
   return (
