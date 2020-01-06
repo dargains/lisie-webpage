@@ -14,7 +14,7 @@ export const H2 = styled.h2`
 	font-size: 40px;
 	font-weight: bold;
   line-height: 64px;
-  padding-bottom: 32px;
+  padding-bottom: 40px;
   &:after {
     content: '';
     height: 6px;
@@ -40,7 +40,7 @@ export const Body = styled.p`
 	line-height: 30px;
 `;
 export const BodySmall = styled.p`
-  color: var(--neu-06);
+  color: ${props => props.white ? 'var(--neu-04)' : 'var(--neu-06)'};
 	font-family: Montserrat;
 	font-size: 18px;
 	line-height: 26px;

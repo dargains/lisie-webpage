@@ -5,6 +5,7 @@ import WOT from '../containers/WOT'
 import Features from '../containers/Features'
 import Media from '../containers/Media'
 import CTABlock from '../containers/CTABlock'
+import Footer from '../containers/Footer'
 
 export default function Home() {
 
@@ -15,6 +16,7 @@ export default function Home() {
       <Features />
       <Media />
       <CTABlock />
+      <Footer />
     </>
   )
 }
