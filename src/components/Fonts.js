@@ -4,7 +4,7 @@ export const H1 = styled.h1`
 	color: var(--neu-01);
 	font-family: Montserrat;
 	font-size: 60px;
-	font-weight: bold;
+	font-weight: 700;
 	line-height: 64px;
 `;
 
@@ -12,7 +12,7 @@ export const H2 = styled.h2`
 	color: ${props => props.white ? 'var(--neu-01)' : 'var(--neu-06)'};
 	font-family: Montserrat;
 	font-size: 40px;
-	font-weight: bold;
+	font-weight: 700;
   line-height: 64px;
   padding-bottom: 40px;
   &:after {
@@ -30,7 +30,7 @@ export const H3 = styled.h3`
 	color: var(--m-01);
 	font-family: Montserrat;
 	font-size: 24px;
-	font-weight: bold;
+	font-weight: 700;
 	line-height: 30px;
 `;
 export const Body = styled.p`
@@ -44,4 +44,13 @@ export const BodySmall = styled.p`
 	font-family: Montserrat;
 	font-size: 18px;
 	line-height: 26px;
+`;
+
+export const ButtonText = styled.span`
+	color: var(--m-01);
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -1px;
+  line-height: 30px;
 `;
