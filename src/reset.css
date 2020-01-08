@@ -93,7 +93,8 @@ video {
 a {
   color: currentColor;
 }
-img {
+img,
+video {
   width: 100%;
 }
 

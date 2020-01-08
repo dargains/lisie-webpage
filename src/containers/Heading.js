@@ -9,6 +9,7 @@ import ButtonContainer from '../components/ButtonContainer'
 import logo from '../images/Logo.png'
 import Phone from '../images/iPhone 8.png'
 import Screen from '../images/Screen.png'
+import Video from '../images/video.mp4'
 
 const Heading = () => {
   return (
@@ -26,7 +27,7 @@ const Heading = () => {
             </ButtonContainer>
           </div>
           <div>
-            <Figure width={315} src={Screen} alt="Lisie app" style={figureStyle} />
+            <Figure width={315} src={Video} alt="Lisie app" style={figureStyle} video />
             <Figure width={530} src={Phone} alt="Lisie app" />
           </div>
         </Container>

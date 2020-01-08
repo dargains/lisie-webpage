@@ -1,11 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Figure = ({ style, width, src, alt }) => {
+const Figure = ({ style, width, src, alt, video }) => {
   return (
-    <figure style={{ maxWidth: width + 'px', ...style }}>
-      <img src={src} alt={alt} />
-    </figure>
+    <>
+      {
+        video
+          ? <video src={src} style={{ maxWidth: width + 'px', ...style }} loop muted autoPlay />
+          : <figure style={{ maxWidth: width + 'px', ...style }}>
+            <img src={src} alt={alt} />
+          </figure>
+      }
+    </>
+
   )
 }
 
