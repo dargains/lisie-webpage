@@ -1,6 +1,6 @@
 {
-  "short_name": "Lugar Livre",
-  "name": "Lugar Livre",
+  "short_name": "Lisie",
+  "name": "Lisie",
   "icons": [
     {
       "src": "icons/icon-16x16.png",
@@ -48,8 +48,8 @@
       "type": "image/png"
     }
   ],
-  "start_url": ".",
+  "start_url": "/Lisie",
   "display": "standalone",
-  "theme_color": "#c5c9e6",
+  "theme_color": "#f45d5d",
   "background_color": "#ffffff"
 }
