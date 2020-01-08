@@ -2,26 +2,25 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import PlayNormal from '../images/play normal.svg'
-import AppNormal from '../images/app normal.svg'
-import PlayDisabled from '../images/play disabled.svg'
-import AppDisabled from '../images/app disabled.svg'
+import { ButtonText } from './Fonts'
 
 const Button = ({ handleClick, type, disabled }) => {
-  const source = (type => {
+  const copy = (type => {
     if (type === 'play') {
-      if (disabled) return PlayDisabled
-      else return PlayNormal
+      return <p>
+        <ButtonText>Google Play </ButtonText>
+      </p>
     }
     if (type === 'app') {
-      if (disabled) return AppDisabled
-      else return AppNormal
+      return <p>
+        <ButtonText>App Store </ButtonText>
+      </p>
     }
   })(type)
 
   return (
     <BTN onClick={handleClick} disabled={disabled}>
-      <img src={source} alt={type === "app" ? "App Store" : "Play Store"} />
+      {copy}
     </BTN>
   )
 }
@@ -29,11 +28,15 @@ const Button = ({ handleClick, type, disabled }) => {
 const BTN = styled.figure`
   width: 184px;
 	height: 56px;
+  border-radius: 28px;
   display: block;
   cursor: pointer;
   opacity: 1;
-  transition: opacity .2s ease-in-out;
+  border: 2px solid var(--neu-01);
+  background-color: ${props => props.disabled ? 'transparent' : 'var(--neu-01'};
   pointer-events: ${props => props.disabled ? 'none' : 'auto'};
+  opacity: ${props => props.disabled ? .25 : 1};
+  transition: opacity .2s ease-in-out;
   &:hover {
     opacity: .5;
   }
