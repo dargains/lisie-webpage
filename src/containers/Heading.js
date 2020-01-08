@@ -23,8 +23,6 @@ const Heading = () => {
             <ButtonContainer style={buttonContainerStyle}>
               <Button type="play" />
               <Button type="app" disabled />
-              {/* <Button type="play" disabled />
-            <Button type="app" disabled /> */}
             </ButtonContainer>
           </div>
           <div>
@@ -51,6 +49,7 @@ const figureStyle = {
 
 const Section = styled.section`
   background: linear-gradient(46.96deg, #EE5156 0%, #FF7469 41.9%, #F2A378 100%);
+  background: red;
   &:before {
     content: "";
     width: 100%;
