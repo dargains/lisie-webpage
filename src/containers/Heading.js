@@ -49,7 +49,6 @@ const figureStyle = {
 
 const Section = styled.section`
   background: linear-gradient(46.96deg, #EE5156 0%, #FF7469 41.9%, #F2A378 100%);
-  background: red;
   &:before {
     content: "";
     width: 100%;

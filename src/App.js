@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import { lightTheme } from './themes'
 
@@ -10,7 +11,9 @@ const App = () => {
   return (
     <ThemeProvider theme={lightTheme}>
       <main className="App" style={{ height }}>
-        <Home />
+        <Router basename={'/Lisie'}>
+          <Route path='/' component={Home} />
+        </Router>
       </main>
     </ThemeProvider>
   );

@@ -47,7 +47,6 @@ export const BodySmall = styled.p`
 `;
 
 export const ButtonText = styled.span`
-	color: var(--m-01);
   font-family: Montserrat;
   font-weight: 500;
   font-size: 18px;
