@@ -1,4 +1,4 @@
-var cacheName = 'lugarlivre v1.2';
+var cacheName = 'lisie v1.0';
 var filesToCache = [
   '/',
   '/index.html',
@@ -17,11 +17,6 @@ var filesToCache = [
   '/static/js/chunk.js.map',
   '/static/js/runtime-main.js',
   '/static/js/runtime-main.js.map',
-
-  '/static/media/Cloud 01.svg',
-  '/static/media/Cloud 02.svg',
-  '/static/media/Cloud 03.svg',
-  '/static/media/Logo.svg'
 
 ];
 
