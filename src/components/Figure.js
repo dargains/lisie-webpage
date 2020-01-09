@@ -20,7 +20,8 @@ Figure.propTypes = {
   width: PropTypes.number.isRequired,
   src: PropTypes.string.isRequired,
   alt: PropTypes.string,
-  style: PropTypes.object
+  style: PropTypes.object,
+  video: PropTypes.bool
 }
 
 export default Figure
