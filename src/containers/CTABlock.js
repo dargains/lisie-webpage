@@ -11,7 +11,7 @@ const CTABlock = () => {
       <div className="wrapper">
         <H2 white>Lisie App</H2>
         <Body white>Agora a família está completa</Body>
-        <ButtonContainer center style={{ marginTop: "64px" }}>
+        <ButtonContainer center style={{ marginTop: "52px", marginBottom: "16px" }}>
           <Button type="play" />
           <Button type="app" disabled />
         </ButtonContainer>
