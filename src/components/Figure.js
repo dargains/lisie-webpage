@@ -17,8 +17,8 @@ const Figure = ({ style, width, src, alt, video }) => {
 }
 
 Figure.propTypes = {
-  width: PropTypes.number.isRequired,
   src: PropTypes.string.isRequired,
+  width: PropTypes.number,
   alt: PropTypes.string,
   style: PropTypes.object,
   video: PropTypes.bool

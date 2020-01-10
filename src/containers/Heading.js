@@ -8,7 +8,6 @@ import ButtonContainer from '../components/ButtonContainer'
 
 import logo from '../images/Logo.png'
 import Phone from '../images/iPhone 8.png'
-import Screen from '../images/Screen.png'
 import Video from '../images/video.mp4'
 
 const Heading = () => {
@@ -16,18 +15,18 @@ const Heading = () => {
     <Section>
       <div className="wrapper" style={{ paddingBottom: "0" }}>
         <Container>
-          <div style={{ maxWidth: "500px" }}>
-            <Figure width={288} src={logo} alt='Lisie App' style={logoStyle} />
+          <div>
+            <Figure src={logo} alt='Lisie App' />
             <H1>
               O elemento que faltava na tua família.
             </H1>
-            <ButtonContainer style={buttonContainerStyle}>
+            <ButtonContainer>
               <Button type="play" />
               <Button type="app" disabled />
             </ButtonContainer>
           </div>
           <div>
-            <Figure width={315} src={Video} alt="Lisie app" style={figureStyle} video />
+            <Figure src={Video} alt="Lisie app" style={figureStyle} video />
             <Figure width={530} src={Phone} alt="Lisie app" />
           </div>
         </Container>
@@ -35,17 +34,12 @@ const Heading = () => {
     </Section>
   )
 }
-const logoStyle = {
-  left: "-64px",
-  marginBottom: "-32px"
-}
-const buttonContainerStyle = {
-  marginTop: "40px"
-}
+
 const figureStyle = {
   position: "absolute",
-  top: "48px",
-  left: "106px"
+  maxWidth: "60%",
+  top: "5.2%",
+  left: "20%"
 }
 
 const Section = styled.section`
@@ -60,12 +54,49 @@ const Section = styled.section`
     right: 0;
     bottom: 0;
   }
+  @media screen and (max-width: 1024px) {
+    &:before {
+      display: none;
+    }
+    .wrapper {
+      top: -40px;
+    }
+  }
 `;
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
   .heading__screen {
     position: absolute;
+  }
+  div:nth-of-type(1) {
+    max-width: 500px;
+    div {
+      margin-top: 40px;
+    }
+    figure {
+      max-width: 288px;
+      left: -64px;
+      margin-bottom: -32px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    div:nth-of-type(1) {
+      max-width: none;
+      width: 100%;
+      div {
+        margin-top: 64px;
+      }
+      figure {
+        max-width: 192px;
+        left: -42px;
+        margin-bottom: -16px;
+        margin-top: 64px;
+      }
+    }
+    div:nth-of-type(2) {
+      display: none;
+    }
   }
 `;
 

@@ -19,6 +19,13 @@ const Container = styled.div`
   > * {
     margin-right: 24px;
   }
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+      > * {
+        margin-right: 0;
+        margin-bottom: 16px;
+      }
+  }
 `;
 
 ButtonContainer.propTypes = {
