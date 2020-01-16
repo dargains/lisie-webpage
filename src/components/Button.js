@@ -9,7 +9,7 @@ import AppleW from '../images/appleW.svg'
 import PlayC from '../images/playC.svg'
 import PlayW from '../images/playW.svg'
 
-const Button = ({ handleClick, type, disabled }) => {
+const Button = ({ handleClick, type, link, disabled }) => {
   const copy = (type => {
     if (type === 'play') {
       if (disabled) return <p>
@@ -34,13 +34,13 @@ const Button = ({ handleClick, type, disabled }) => {
   })(type)
 
   return (
-    <BTN onClick={handleClick} disabled={disabled}>
+    <BTN onClick={handleClick} disabled={disabled} href={link}>
       {copy}
     </BTN>
   )
 }
 
-const BTN = styled.button`
+const BTN = styled.a`
   width: 184px;
   padding: 12px 0;
   border-radius: 28px;
@@ -69,6 +69,7 @@ const BTN = styled.button`
 
 Button.propTypes = {
   handleClick: PropTypes.func,
+  link: PropTypes.string,
   type: PropTypes.string.isRequired,
   disabled: PropTypes.bool
 }

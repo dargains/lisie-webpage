@@ -8,7 +8,7 @@ import ButtonContainer from '../components/ButtonContainer'
 
 import logo from '../images/Logo.png'
 import Phone from '../images/iPhone 8.png'
-import Video from '../images/video.mp4'
+import Video from '../images/introvideo.mp4'
 
 const Heading = () => {
   return (
@@ -21,7 +21,7 @@ const Heading = () => {
               O elemento que faltava na tua família.
             </H1>
             <ButtonContainer>
-              <Button type="play" />
+              <Button type="play" link="https://play.google.com/apps/testing/com.spiroStockManagement" />
               <Button type="app" disabled />
             </ButtonContainer>
           </div>
@@ -37,9 +37,9 @@ const Heading = () => {
 
 const figureStyle = {
   position: "absolute",
-  maxWidth: "60%",
-  top: "5.2%",
-  left: "20%"
+  maxWidth: "59.4%",
+  top: "6.2%",
+  left: "20.2%"
 }
 
 const Section = styled.section`

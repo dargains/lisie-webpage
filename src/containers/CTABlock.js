@@ -12,7 +12,7 @@ const CTABlock = () => {
         <H2 white>Lisie App</H2>
         <Body white>Agora a família está completa</Body>
         <ButtonContainer center style={{ marginTop: "52px", marginBottom: "16px" }}>
-          <Button type="play" />
+          <Button type="play" link="https://play.google.com/apps/testing/com.spiroStockManagement" />
           <Button type="app" disabled />
         </ButtonContainer>
       </div>
