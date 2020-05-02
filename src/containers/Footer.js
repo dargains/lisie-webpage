@@ -8,7 +8,7 @@ const Footer = () => {
     <FooterContainer>
       <div className="wrapper">
         <BodySmall white>
-          Contact us to <a href="mailto:hello@lisie.app" style={{ color: 'var(--neu-03)' }}>hello@lisie.app</a> for feedbacks or suggestions
+          Fala connosco através de <a href="mailto:hello@lisie.app" style={{ color: 'var(--neu-03)' }}>hello@lisie.app</a> e dá-nos o teu feedback ou sugestões.
         </BodySmall>
         <BodySmall white>
           Lisie © Copyright 2020

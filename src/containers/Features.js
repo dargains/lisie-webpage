@@ -17,7 +17,7 @@ const Features = () => {
           <H3>Lista Compras</H3>
           <br />
           <Body>
-            Construida automáticamente através da leitura dos códigos de barras de produtos
+            Construída automaticamente através da leitura dos códigos de barras de produtos
         </Body>
         </FeatureItem>
         <FeatureItem>
@@ -41,8 +41,6 @@ const Features = () => {
   )
 }
 
-const sectionStyles = {
-}
 const Section = styled.section`
   .wrapper {
     display: flex;

@@ -10,7 +10,7 @@ const WOT = props => {
           Sobre a Lisie
         </H2>
         <Body>
-          Mantêm-te a par do que tens em casa, do que consumiste e do que te falta comprar.
+          Mantém-te a par do que tens em casa, do que consumiste e do que te falta comprar.
         </Body>
         <br />
         <Body>

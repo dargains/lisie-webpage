@@ -6,7 +6,7 @@ import Button from '../components/Button'
 import Figure from '../components/Figure'
 import ButtonContainer from '../components/ButtonContainer'
 
-import logo from '../images/Logo.png'
+import Logo from '../images/Logo.png'
 import Phone from '../images/iPhone 8.png'
 import Video from '../images/introvideo.mp4'
 
@@ -16,7 +16,7 @@ const Heading = () => {
       <div className="wrapper" style={{ paddingBottom: "0" }}>
         <Container>
           <div>
-            <Figure src={logo} alt='Lisie App' />
+            <Figure src={Logo} alt='Lisie App' />
             <H1>
               O elemento que faltava na tua família.
             </H1>
